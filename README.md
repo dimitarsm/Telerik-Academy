@@ -1,1 +1,3 @@
 # Telerik-Academy
+
+Homework repository
