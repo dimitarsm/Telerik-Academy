@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 	<title>Registration Form</title>
+</head>
+<body>
+	<table cellspacing="0" width="400" border="1">
+	<form action="/" method="post">
+		<tr>
+			<td width="120" align="center"><strong>Last Name</strong></td>
+			<td width="280"><input type="text" name="member_name" size="27" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>First Name</strong></td>
+			<td><input type="text" name="first_name" size="27" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Address</strong></td>
+			<td><textarea name="address" rows="4" cols="27" required="required"/></textarea></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>City</strong></td>
+			<td><input type="text" name="city" size="15" required="required"/> State <input type="text" name="state" size="3" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Zip/Postal Code</strong></td>
+			<td><input type="numbers" name="zip_code" size="4" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Country</strong></td>
+			<td>
+				<select name="country" required="required">
+					  <option>Bulgaria</option>
+  					  <option>>UK</option>
+ 					  <option>USA</option>
+					  <option>French Polynesia</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Phone(country code, area code, number)</strong></td>
+			<td>(+<input type="tel" name="country_code" size="3" required="required"/>) <input type="tel" name="areacode" size="3" required="required"/> <input type="tel" name="phone_number" size="9" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>E-mail</strong></td>
+			<td><input type="email" name="email" size="25" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Birth Date</strong></td>
+			<td><input type="text" name="birthdate" value="дд.мм.гггг г." size="15" required="required"/></td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Gender</strong></td>
+			<td>
+				<select name="gender" required="required">
+					  <option value="Male">Male</option>
+  					  <option value="Female">Female</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Starting date</strong></td>
+			<td><input type="radio" name="radios"/>Spring 2015
+				<input type="radio" name="radios"/>Summer 2015</td>
+		</tr>
+		<tr>
+			<td align="center"><strong>Comments/Questions</strong></td>
+			<td><textarea name="comments" rows="5" cols="27" required="required"/></textarea></td>
+		</tr>
+		<tr>
+			<td bgcolor="skyblue" colspan="2" align="center">
+				<input type="submit" value="Submit"/>
+				<input type="reset" value="Clean This Form"/></td>
+		</tr>
+	</form>
+	</table>
+</body>
+</html>
